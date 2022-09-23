@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+//    @EnvironmentObject var main: Main
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView {
+            TripsView().tabItem {}
+            MainView().tabItem {}
+            ProfileView().tabItem {}
+        }
+        .tabViewStyle(.page)
+        .indexViewStyle(.page(backgroundDisplayMode: .never))
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView()//.environmentObject(Main())
     }
 }
