@@ -21,8 +21,6 @@
 		864215B528DA6091000FF933 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864215B328DA6091000FF933 /* Location.swift */; };
 		86923DC828DD08F80037CE2F /* TripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86923DC728DD08F80037CE2F /* TripsView.swift */; };
 		86923DC928DD08F80037CE2F /* TripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86923DC728DD08F80037CE2F /* TripsView.swift */; };
-		86923DCB28DD0A9E0037CE2F /* Trips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86923DCA28DD0A9E0037CE2F /* Trips.swift */; };
-		86923DCC28DD0A9E0037CE2F /* Trips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86923DCA28DD0A9E0037CE2F /* Trips.swift */; };
 		86923DD428DD11EA0037CE2F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86923DD328DD11EA0037CE2F /* ProfileView.swift */; };
 		86923DD528DD11EA0037CE2F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86923DD328DD11EA0037CE2F /* ProfileView.swift */; };
 		86923DD728DD13D80037CE2F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86923DD628DD13D70037CE2F /* MainView.swift */; };
@@ -63,7 +61,6 @@
 		86330E0028CE83FF000C7B91 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		864215B328DA6091000FF933 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		86923DC728DD08F80037CE2F /* TripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsView.swift; sourceTree = "<group>"; };
-		86923DCA28DD0A9E0037CE2F /* Trips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trips.swift; sourceTree = "<group>"; };
 		86923DD328DD11EA0037CE2F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		86923DD628DD13D70037CE2F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		86923DD928DD1A9B0037CE2F /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
@@ -121,7 +118,6 @@
 				86923DD628DD13D70037CE2F /* MainView.swift */,
 				86923DD928DD1A9B0037CE2F /* Main.swift */,
 				86923DD328DD11EA0037CE2F /* ProfileView.swift */,
-				86923DCA28DD0A9E0037CE2F /* Trips.swift */,
 				864215B328DA6091000FF933 /* Location.swift */,
 				86330DDC28CE83FF000C7B91 /* Assets.xcassets */,
 			);
@@ -327,7 +323,6 @@
 				86923DD728DD13D80037CE2F /* MainView.swift in Sources */,
 				86923DDA28DD1A9B0037CE2F /* Main.swift in Sources */,
 				86330E0428CE83FF000C7B91 /* ContentView.swift in Sources */,
-				86923DCB28DD0A9E0037CE2F /* Trips.swift in Sources */,
 				864215B428DA6091000FF933 /* Location.swift in Sources */,
 				86923DD428DD11EA0037CE2F /* ProfileView.swift in Sources */,
 				86330E0228CE83FF000C7B91 /* Angel_RingsApp.swift in Sources */,
@@ -342,7 +337,6 @@
 				86923DD828DD13D80037CE2F /* MainView.swift in Sources */,
 				86923DDB28DD1A9B0037CE2F /* Main.swift in Sources */,
 				86330E0528CE83FF000C7B91 /* ContentView.swift in Sources */,
-				86923DCC28DD0A9E0037CE2F /* Trips.swift in Sources */,
 				864215B528DA6091000FF933 /* Location.swift in Sources */,
 				86923DD528DD11EA0037CE2F /* ProfileView.swift in Sources */,
 				86330E0328CE83FF000C7B91 /* Angel_RingsApp.swift in Sources */,
@@ -502,6 +496,9 @@
 				DEVELOPMENT_TEAM = 528T5U7KUX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app uses your location only for your safety.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app uses your location only for your safety.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app uses your location only for your safety.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -532,6 +529,9 @@
 				DEVELOPMENT_TEAM = 528T5U7KUX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app uses your location only for your safety.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app uses your location only for your safety.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app uses your location only for your safety.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

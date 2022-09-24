@@ -34,7 +34,7 @@ struct TripsView: View {
             VStack {
                 ZStack(alignment: .leading) {
                     beige
-                        .frame(width: 400, height: 200)
+                        .frame(width: 420, height: 200)
                         .clipShape(shape)
                         .ignoresSafeArea()
                     VStack{
@@ -55,7 +55,7 @@ struct TripsView: View {
                             Text(trip.address)
                         }
                     }
-                }.frame(width: 430, height: 310, alignment: .topLeading)
+                }.frame(width: 430, height: 380, alignment: .topLeading)
                 Button("View More") {}.foregroundColor(.black)
                 Spacer()
             }

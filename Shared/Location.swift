@@ -6,3 +6,13 @@
 //
 
 import Foundation
+import CoreLocation
+
+
+
+class Location {
+//    let locationManager = CLLocationManager()
+//    locationManager.delegate = self
+//
+//    locationManager.requestLocation()
+}

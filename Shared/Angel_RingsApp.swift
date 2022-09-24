@@ -9,11 +9,8 @@ import SwiftUI
 
 @main
 struct Angel_RingsApp: App {
-    init() {
-        <#code#>
-    }
+    @StateObject private var main = Main()
     
-    @StateObject private var main: Main
     var body: some Scene {
         WindowGroup {
             ContentView().environmentObject(main)

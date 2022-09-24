@@ -30,69 +30,76 @@ struct ProfileView: View {
     @State private var activated = false
     
     var body: some View {
-        VStack {
-            ZStack {
-                beige
-                    .clipShape(shape)
-                    .ignoresSafeArea()
-                    .frame(width: 400, height: 275, alignment: .top)
-                HStack {
-                    Image("Profile")
-                        .resizable()
-                        .frame(width: .infinity, height: 150)
-                        .clipShape(Circle())
-                    VStack {
-                        Text("Vicky Zheng")
-                            .font(.system(size: 30))
-                        Text("Last checked in 3 hours ago")
-                            .foregroundColor(.gray)
-                            .font(.system(size: 15))
+        ZStack(alignment: .top) {
+            beige.ignoresSafeArea()
+                .frame(height: 280, alignment: .top)
+                .clipShape(shape)
+            VStack {
+                ZStack {
+                    HStack {
+                        VStack {
+                            Image("Profile")
+                                .resizable()
+                                .frame(width: 150, height: 150)
+                                .clipShape(Circle())
+                            Button("edit") {}
+                                .foregroundColor(.gray)
+                        }
+                        VStack {
+                            Text("Vicky Zheng")
+                                .font(.system(size: 30))
+                            Text("Last checked in 3 hours ago")
+                                .foregroundColor(.gray)
+                                .font(.system(size: 15))
+                        }
                     }
-                }.padding([.top], 30)
-            }.ignoresSafeArea()
-            // emergency contact
-            ZStack {
-                VStack(alignment: .leading) {
-                    Text("**Emergency Contacts**")
-                        .foregroundColor(.black)
-                        .font(.system(size: 20))
-                    ForEach(contacts.indices) { i in
-                        ZStack(alignment: .leading) {
-                            Color
-                                .white
-                                .frame(width: 340, height: 70)
-                                .clipShape(shape)
-                                .overlay(
-                                    shape.stroke(beige, lineWidth: 2)
-                                )
-                            
-                            HStack {
-                                Text("\(i+1)")
-                                    .foregroundColor(Color(red: 0.9529, green: 0.7961, blue: 0.2706))
-                                    .font(.system(size: 25))
-                                    .padding([.leading], 10)
-                                Image(contacts[i].picture)
-                                    .resizable()
-                                    .frame(width: 50, height: 50)
-                                    .clipShape(profile)
-                                    .padding([.leading], 10)
-                                VStack(alignment: .leading) {
-                                    Text(contacts[i].name)
-                                        .font(.system(size: 20))
-                                    Text(contacts[i].relationship)
-                                        .foregroundColor(.gray)
-                                }.padding([.leading], 5)
+                }.padding([.top], 75)
+                // emergency contact
+                ZStack {
+                    VStack(alignment: .leading) {
+                        Text("**Emergency Contacts**")
+                            .foregroundColor(.black)
+                            .font(.system(size: 20))
+                        ForEach(contacts.indices) { i in
+                            ZStack(alignment: .leading) {
+                                Color
+                                    .white
+                                    .frame(width: 360, height: 70)
+                                    .clipShape(shape)
+                                    .overlay(
+                                        shape.stroke(beige, lineWidth: 2)
+                                    )
+                                
+                                HStack {
+                                    Text("\(i+1)")
+                                        .foregroundColor(Color(red: 0.9529, green: 0.7961, blue: 0.2706))
+                                        .font(.system(size: 25))
+                                        .padding([.leading], 10)
+                                    Image(contacts[i].picture)
+                                        .resizable()
+                                        .frame(width: 50, height: 50)
+                                        .clipShape(profile)
+                                        .padding([.leading], 10)
+                                    VStack(alignment: .leading) {
+                                        Text(contacts[i].name)
+                                            .font(.system(size: 20))
+                                        Text(contacts[i].relationship)
+                                            .foregroundColor(.gray)
+                                    }.padding([.leading], 5)
+                                }
                             }
                         }
                     }
-                }
-            } // emergency contact end
-            Button("Log Out") {}
-                .foregroundColor(.black)
-                .frame(width: 300, height: 50)
-                .background(beige)
-                .clipShape(shape)
-        }
+                }.padding([.top], 30) // emergency contact end
+                Spacer()
+                Button("Log Out") {}
+                    .foregroundColor(.black)
+                    .frame(width: 300, height: 50)
+                    .background(beige)
+                    .clipShape(shape)
+                    .padding([.bottom], 40)
+            }
+        }.ignoresSafeArea()
     }
 }
 
